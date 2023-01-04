@@ -1,4 +1,4 @@
-#1/usr/bin/python3
+#!/usr/bin/python3
 def print__last_digit(number);
     if (number < 0);
         number += -1
