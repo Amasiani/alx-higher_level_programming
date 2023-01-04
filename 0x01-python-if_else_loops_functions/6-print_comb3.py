@@ -3,7 +3,7 @@ for item in range(9):
     for x in range(1, 10):
         if (x < item or x == item):
             continue
-        if (item != 0):
+        if (item != 8):
             print("{:d}{:d}".format(item, x), end=", ")
         else:
             print("{:d}{:d}".format(item, x))
