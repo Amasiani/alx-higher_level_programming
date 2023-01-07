@@ -5,7 +5,7 @@ if __name__ == "_main__":
     argc = len(sys.argv)
     for str in range(argc):
         if (argc != 4):
-            print("Usgae: {:s} <a> <operator> <b>".format(sys.argv[str]))
+            print("Usage: {:s} <a> <operator> <b>".format(sys.argv[str]))
             exit(1)
         else:
             a = int(sys.argv[1])
@@ -14,9 +14,9 @@ if __name__ == "_main__":
                 print("{:d} + {:d} = {:d}".format(a, b, add(a, b)))
             elif (sys.argv[2] == '_'):
                 print("{:d} - {:d} = {:d}".format(a, b, sub(a, b)))
-            elif (sys.argv[3] == '*'):
+            elif (sys.argv[2] == '*'):
                 print("{:d} * {:d} = {:d}".format(a, b, mul(a, b)))
-            elif (sys.argv[4] == '/'):
+            elif (sys.argv[2] == '/'):
                 print("{:d} / {:d} = {:d}".format(a, b, div(a, b)))
             else:
                 print("Unknown oparator. Available operators: +, _, * and /")
