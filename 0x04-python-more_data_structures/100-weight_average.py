@@ -5,7 +5,7 @@ def weight_average(my_list=[]):
     a = 0
     b = 0
     for i in range(len(my_list)):
-        for j in range(len(my_list]):
+        for j in range(len(my_list)):
             a = a + (my_list[i][j] * my_list[i][j+1])
             b = b + my_list[i][j+1]
             break
