@@ -2,6 +2,8 @@
 
 class Square():
     """
+
     empty class Square that define a square
+
     """
     pass
