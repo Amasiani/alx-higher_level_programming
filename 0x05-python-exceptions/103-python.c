@@ -9,9 +9,10 @@ void print_python_float(PyObject *p);
 * print_python_list - Prints basic info about Python lists
 * @p: A PyObject list object
 */
- void print_python_list(PyObject *p)
+
+void print_python_list(PyObject *p)
 {
-	Py_ssize_t sizen = 0;
+	Py_ssize_t size = 0;
 	PyListObject *item;
 	int i = 0;
 
@@ -56,7 +57,7 @@ void print_python_bytes(PyObject *p)
 		return;
 	}
 	size = PyBytes_Size(p);
-	printf(" size: %ld\n", size);
+	printf(" size: %zd\n", size);
 	string = (assert(PyBytes_Check(p)), (((PyBytesObject *)(p))->ob_sval));
 	printf(" trying string: %s\n", string);
 	printf(" first %zd bytes:", size < 10 ? size + 1 : 10);
