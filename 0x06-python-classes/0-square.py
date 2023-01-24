@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 
-class Square:
+class Square():
     """
     empty class Square that define a square
     """
