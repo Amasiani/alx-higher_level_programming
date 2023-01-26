@@ -1,4 +1,5 @@
 #!/usr/bin/python3
+
 """Define classes for a singly-linked list."""
 
 
@@ -16,7 +17,7 @@ class Node:
 
     @property
     def data(self):
-        """Get/sets the data of the Node."""
+        """Get/set the data of the Node."""
         return (self.__data)
 
     @data.setter
@@ -27,7 +28,7 @@ class Node:
 
     @property
     def next_node(self):
-        """Get/sets the next_node of the Node."""
+        """Get/set the next_node of the Node."""
         return (self.__next_node)
 
     @next_node.setter
@@ -39,7 +40,6 @@ class Node:
 
 class SinglyLinkedList:
     """Represent a singly-linked list."""
-
 
     def __init__(self):
         """Initialize a new SinglyLinkedList."""
@@ -58,7 +58,7 @@ class SinglyLinkedList:
             self.__head = new
         elif self.__head.data > value:
             new.next_node = self.__head
-            self.__head =  new
+            self.__head = new
         else:
             tmp = self.__head
             while (tmp.next_node is not None and
