@@ -52,7 +52,6 @@ class SinglyLinkedList:
         Args:
             value (Node): The new Node to insert.
         """
-
         new = Node(value)
         if self.__head is None:
             new.next_node = None
@@ -76,6 +75,3 @@ class SinglyLinkedList:
             values.append(str(tmp.data))
             tmp = tmp.next_node
         return ('\n'.join(values))
-
-
-    
