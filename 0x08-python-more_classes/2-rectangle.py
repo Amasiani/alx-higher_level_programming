@@ -12,7 +12,7 @@ class Rectangle:
             height (int): represents the height of the rectangle.
         Raises:
             TypeError: if size is not integer
-            VaueError: if size less than zero
+            ValueError: if size less than zero
         """
         self.width = width
         self.height = height
