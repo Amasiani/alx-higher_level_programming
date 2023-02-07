@@ -5,11 +5,11 @@
 class Rectangle(BaseGeometry):
     """Rectangle class."""
 
-    def __init__(self, width, length):
+    def __init__(self, width, height):
         """Initializes a Rectangle class.
         Args:
             width (int): Rectangle width.
-            length (int): Rectangle height
+            height (int): Rectangle height
         """
         self.integer_validator("width", width)
         self.integer_validator("height", height)
