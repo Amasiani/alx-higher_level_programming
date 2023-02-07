@@ -8,6 +8,9 @@ class MyList(list):
         list (obj): list class.
     """
 
-    def print_sorted(self):
-        """prints a sorted list"""
-        return(print(sorted(self)))
+    def print_sorted(self, list1):
+        """prints a sorted list
+        Args:
+            list1 (list): List of integer
+        """
+        return(print(sorted(list1)))
