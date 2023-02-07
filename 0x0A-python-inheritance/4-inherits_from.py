@@ -2,7 +2,7 @@
 """Inheritance"""
 
 
-def inherits_form(obj, a_class):
+def inherits_from(obj, a_class):
     """Returns True if object is an instance of class that inherited
        (directed or indirectedly) from the speciifed class, else False
     Args:
