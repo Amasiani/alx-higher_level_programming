@@ -2,7 +2,7 @@
 """
 *Script that adds the State object “Louisiana”
  to the database hbtn_0e_6_usa
-*Script should take 3 arguments: mysql username, 
+*Script should take 3 arguments: mysql username,
  mysql password and database name
 *must use the module SQLAlchemy
 *Import State and Base from model_state - from model_state import Base, State
