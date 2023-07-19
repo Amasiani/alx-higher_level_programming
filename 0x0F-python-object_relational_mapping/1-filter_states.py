@@ -16,7 +16,6 @@ if __name__ == "__main__":
                     COLLATE Latin1_General_CS \
                     LIKE 'N%' ORDER BY states.id;")
     states = control.fetchall()
-
     for state in states:
         print(state)
     control.close()
