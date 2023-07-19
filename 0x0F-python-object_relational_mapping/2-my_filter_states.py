@@ -12,10 +12,12 @@ if __name__ == '__main__':
 
     control = db.cursor()
     control.execute("SELECT * \
-    FROM states \
-    WHERE CONVERT(`name` USING Latin1) \
-    COLLATE Latin1_General_CS = '{}' ORDER BY states.id;".format(sys.argv[4]))
+                    FROM states \
+                    WHERE CONVERT(`name` USING Latin1) \
+                    COLLATE Latin1_General_CS = '{}' \
+                    ORDER BY states.id;".format(sys.argv[4]))
     states = control.fetchall()
-
     for state in states:
         print(state)
+    control.close()
+    db.close()
