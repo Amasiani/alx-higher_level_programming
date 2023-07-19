@@ -26,5 +26,5 @@ if __name__ == "__main__":
     for state in states:
         print(state)
 
-    db_cursor.close()
+    control.close()
     db.close()
