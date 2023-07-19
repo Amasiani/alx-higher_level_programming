@@ -2,7 +2,7 @@
 """
 *Write a script 14-model_city_fetch_by_state.py that
  prints all City objects from the database hbtn_0e_14_usa:
-*Script should take 3 arguments: mysql username, 
+*Script should take 3 arguments: mysql username,
  mysql password and database name
 *Must use the module SQLAlchemy
 *Must import State and Base from model_state -
