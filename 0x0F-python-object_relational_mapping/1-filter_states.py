@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 """
-Lists all states with a name startin with N
+Lists all states with a name starting with N (upper N)
+from database hbtn_0e_0_usa
 """
 import MySQLdb
 import sys
@@ -13,7 +14,6 @@ if __name__ == "__main__":
     control.execute("SELECT * FROM states WHERE name
                 LIKE BINARY 'N%' ORDER BY states.id;")
     states = control.fetchall()
-
     for state in states:
         print(state)
     control.close()
