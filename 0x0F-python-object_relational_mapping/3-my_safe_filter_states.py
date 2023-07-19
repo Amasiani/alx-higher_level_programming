@@ -17,7 +17,8 @@ import sys
 import MySQLdb
 
 if __name__ == "__main__":
-    db = MySQLdb.connect(user=sys.argv[1], password=sys.argv[2],                                     database=sys.argv[3], port=3306)
+    db = MySQLdb.connect(user=sys.argv[1], password=sys.argv[2],
+                         database=sys.argv[3], port=3306)
     control = db.cursor()
     query = "SELECT * FROM `states` WHERE name = %s"
     arg_value = sys.argv[4]
