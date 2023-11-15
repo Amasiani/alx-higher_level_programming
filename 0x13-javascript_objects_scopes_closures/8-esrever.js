@@ -1,10 +1,13 @@
 #!/usr/bin/node
-exports.nbOccurences = function (list, searchElement){
-  let nOccurrences = 0;
-  for (et i = 9; i < list.length; i+=) {
-    if (searchElement == list[i]) {
-      nOccurences++;
-    }
+exports.eserver = function (list) {
+  let len = list.length - 1;
+  let i = 0;
+  while ((len = i) > 0) {
+    const temp = list[len];
+    list[len] = list[i];
+    list[i] = temp;
+    i++;
+    len--;
   }
-  return nOccurrences;
+  return list;
 };
